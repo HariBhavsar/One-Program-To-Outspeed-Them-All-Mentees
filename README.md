@@ -10,7 +10,10 @@ Here is the tentative schedule:
 - Integrate WSL with visual studio code : https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
 - Install git : https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
 - Run the following command to install g++, gdb (optional but recommended), make : `sudo apt update && upgrade && sudo apt-get install build-essential && sudo apt install g++ gdb make ninja-build rsync zip`
-- Run the following command to install python (we might need this for plotting performance) : `sudo apt install python3 python3-pip ipython3` 
+- Run the following command to install python (we might need this for plotting performance) : `sudo apt install python3 python3-pip ipython3`
+- Fork this git repository
+- Instructions for forking: 
+- Follow the instructions on : https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
 - Here are some practice questions to check your installation.
 - Check g++ installation by completing the task described in compile.cpp 
 - Complete the tasks in naive.cpp (implement naive Schur/Element-Wise Product of two vectors)
