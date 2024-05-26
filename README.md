@@ -9,7 +9,7 @@ Here is the tentative schedule:
 - In case you want to try using the manual install (as the default one may not work for everyone), follow this : https://learn.microsoft.com/en-us/windows/wsl/install-manual
 - Integrate WSL with visual studio code : https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
 - Install git : https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
-- Run the following command to install g++, gdb (optional but recommended), make : sudo apt update && upgrade &&sudo apt install g++ gdb make ninja-build rsync zip
+- Run the following command to install g++, gdb (optional but recommended), make : sudo apt update && upgrade && sudo apt-get install build-essential && sudo apt install g++ gdb make ninja-build rsync zip
 - Run the following command to install python (we might need this for plotting performance) : sudo apt install python3 python3-pip ipython3 
 - Here are some practice questions to check your installation.
 - Check g++ installation by completing the task described in compile.cpp 
