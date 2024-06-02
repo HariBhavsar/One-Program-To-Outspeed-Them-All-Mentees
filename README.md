@@ -20,3 +20,9 @@ Here is the tentative schedule:
 - Run the command `make` on the terminal to check Makefile installation
 - Run the command `python3 grapher.py` to check python installation
 - You might need to install some python modules like matplotlib or numpy in which case run pip install {nameOfModule}
+## Week 1 : May the Threads be with you
+- Familiarise yourself with the threading library threads of C++.
+- Understand the concepts of mutual exclusions, race conditions and why locking is necessary (yes it is totally not from a core course of a certain department).
+- Use locks and conditional variables in programs yourself and understand why they are necessary.
+- Also using locks leads to delays so use them smartly and only where necessary.
+- Follow the instructions given in the `README.md` file in the `Week1` folder
