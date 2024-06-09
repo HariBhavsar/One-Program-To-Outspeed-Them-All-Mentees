@@ -1,0 +1,24 @@
+The goal of this file is to help y'all with syntax of SIMD instructions
+
+NOTE : Do not use SIMD instructions without the 'u' (eg: Use _mm256_loadu_ps instead of _mm256_load_ps), the 'u' stands for unaligned 
+and while it is technically slower, it is a lot less verbose in terms of syntax. Also only use SIMD instructions with floats, 
+although they can work with integers as well, working with integers requires alignment which while faster, is a bit more complicated
+Use above note only for load and store instructions
+
+The format is as follows:
+<Instruction/Code> | <Input parameters/types, NA for none> | <Output parameters/types, NA for none> | <Usage> | <Explanation> | <Additional Comments, if any>
+__m256 | NA | NA | __m256 <Name> | Declares a 256 bit register with the name of <Name>
+__m128 | NA | NA | __m128 <Name> | Declares a 128 bit register with the name of <Name>
+_mm256_loadu_ps | float * | __m256 | __m256 <Name> = _mm256_loadu_ps(vec) | Assuming vec is a float*, loads vec[0],vec[1],vec[2]..vec[7] into the 256 bit register by name of <Name>
+_mm256_add_ps | __m256,__m256 | __m256 | __m256 <Name> = _mm256_add_ps(a,b) | Performs <Name>[i] = a[i] + b[i] for i ranging from 0 to 7 | Similar for _mm256_sub_ps, _mm256_mul_ps, _mm256_div_ps, _mm256_max_ps, _mm256_min_ps
+_mm256_storeu_ps | float *,__m256 | NA | _mm256_storeu_ps(a,b) | Performs b[i] = a[i] where a is a 256 bit register whereas b is float* from i = 0 to 7
+_mm256_extractf128_ps | __m256,int | __m128 | __m128 <Name> = _mm256_extractf128_ps(a,0) OR __m128 <Name> = _mm256_extractf128_ps(a,1) | if int is 1, extracts the upper 128 bits and store into <Name>, if int is 0, extract lower 128 bits and store into <Name>
+_mm_hadd_ps | __m128,__m128 | __m128 | __m128 <Name> = _mm_hadd_ps(a,b) | <Name>[0] = a[0] + a[1], <Name>[1] = a[2] + a[3], <Name>[2] = b[0] + b[1], <Name>[3] = b[2] + b[3] | Why might this be useful?
+_mm_cvtss_f32 | __m128 | float | float <Name> = _mm_cvtss_f32(a) | <Name> = a[0]. May not be available on all machines
+
+Those are the instructions that I believe will be relevant to this part. Note there are couple of other interesting instructions as well,
+such as the _mm_mask instructions, I highly recommend you google search or chatGPT them to understand them.
+
+Here is a hint for computing dot product using SIMD instructions.
+Multiply normally
+Extract upper and lower 128 bits into two registers and then use the hadd instruction to obtain a[0] + a[1] + a[2] + a[3] given a
