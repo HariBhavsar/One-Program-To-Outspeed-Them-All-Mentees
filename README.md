@@ -26,3 +26,9 @@ Here is the tentative schedule:
 - Use locks and conditional variables in programs yourself and understand why they are necessary.
 - Also using locks leads to delays so use them smartly and only where necessary.
 - Follow the instructions given in the `README.md` file in the `Week1` folder
+## Week 2 : Maximizing Resource Usage
+- Understand the power of Registers and how one may use specialised registers for parallelization
+- Utilize your system memory to achieve huge speedups
+- Understand the syntax and usage of `SIMD` instructions as well as the intuition behind `Memoization`
+- Get a taste of `Cache Conscious Programming` and how simply reordering loops can result in huge performance gains 
+- Follow the instructions given in the `README.md` file in the `Week2` folder
