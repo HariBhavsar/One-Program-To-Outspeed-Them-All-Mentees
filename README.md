@@ -32,3 +32,9 @@ Here is the tentative schedule:
 - Understand the syntax and usage of `SIMD` instructions as well as the intuition behind `Memoization`
 - Get a taste of `Cache Conscious Programming` and how simply reordering loops can result in huge performance gains 
 - Follow the instructions given in the `README.md` file in the `Week2` folder
+## Week 3 : The Last of The Theory
+- Gain knowledge about what `Graphics Processing Units` are and how to use them to their full potential
+- Learn to take advantage of numbers and how exactly they're represented in computers
+- Create powerfull algorithms by pushing your hardware to its fundamental limits
+- Take a look back at all you have learnt so far and use it to gain incredible speedups in fundamental problems
+- Get started by following the instructions in the `README.md` file in the `Week3` folder
