@@ -13,7 +13,7 @@
 - Ok, you successfully setup openCL, good job, I'm proud of you, now we're going to be working with an altered version of the `OpenCL-Wrapper`, created by `ProjectPhysX`, without him, even setting up openCL would have been impossible, so full credit for this part of the SoC goes to him
 - The reason is that openCL by default is very verbose and has a very cumbersome syntax, this section is simply going to highlight a very simple work case of openCL and we will only touch upon the very top of the iceberg
 - Its a very powerfull tool and we highly recommend exploring it further in your own time
-- We will be working with three `.cpp` files, `OpenCL-Wrapper/OpenCL-/src/add.cpp`,`OpenCL-Wrapper/OpenCL-/src/mul.cpp`,`OpenCL-Wrapper/OpenCL-/src/matMul.cpp` and `OpenCL-Wrapper/OpenCL-Wrapper/src/kernel.cpp` 
+- We will be working with three `.cpp` files, `OpenCL-Wrapper/src/add.cpp`,`OpenCL-Wrapper/src/mul.cpp`,`OpenCL-Wrapper/src/matMul.cpp` and `/OpenCL-Wrapper/src/kernel.cpp` 
 - `add.cpp` contains the so-called driver code, it is the brains of the operation, allocating resources to the most powerful device available
 - Go through `add.cpp` which currently contains a very simple 1024-dimensional vector addition and understand how resources for this addition are allocated, I have also added explanation for what things do
 - Go through `kernel.cpp` where a simple code for addition is written
