@@ -13,16 +13,16 @@
 - Ok, you successfully setup openCL, good job, I'm proud of you, now we're going to be working with an altered version of the `OpenCL-Wrapper`, created by `ProjectPhysX`, without him, even setting up openCL would have been impossible, so full credit for this part of the SoC goes to him
 - The reason is that openCL by default is very verbose and has a very cumbersome syntax, this section is simply going to highlight a very simple work case of openCL and we will only touch upon the very top of the iceberg
 - Its a very powerfull tool and we highly recommend exploring it further in your own time
-- We will be working with just two `.cpp` files, `OpenCL-Wrapper/OpenCL-Wrapper/src/main.cpp` and `OpenCL-Wrapper/OpenCL-Wrapper/src/kernel.cpp` 
-- `main.cpp` contains the so-called driver code, it is the brains of the operation, allocating resources to the most powerful device available
-- Go through `main.cpp` which currently contains a very simple 1024-dimensional vector addition and understand how resources for this addition are allocated, I have also added explanation for what things do
+- We will be working with three `.cpp` files, `OpenCL-Wrapper/OpenCL-/src/add.cpp`,`OpenCL-Wrapper/OpenCL-/src/mul.cpp`,`OpenCL-Wrapper/OpenCL-/src/matMul.cpp` and `OpenCL-Wrapper/OpenCL-Wrapper/src/kernel.cpp` 
+- `add.cpp` contains the so-called driver code, it is the brains of the operation, allocating resources to the most powerful device available
+- Go through `add.cpp` which currently contains a very simple 1024-dimensional vector addition and understand how resources for this addition are allocated, I have also added explanation for what things do
 - Go through `kernel.cpp` where a simple code for addition is written
 ### Task 1
 - Understand the vector addition mechanics and write code to do element-wise vector multiplication
-- Make the appropriate changes in `main.cpp` and in `kernel.cpp`
+- Make the appropriate changes in `mul.cpp` and in `kernel.cpp`
 - Post the time difference you get on whatsapp (naive will be faster here, don't worry)
 ### Task 2
-- Write an implementation of matrix multiplication by making appropriate changes in `main.cpp` and `kernel.cpp`
+- Write an implementation of matrix multiplication by making appropriate changes in `matMul.cpp` and `kernel.cpp`
 - I swear this is the last unique matrix multiplication implementation you will be doing lol
 - Post the speedup you get on whatsapp (Depending on your environment, openCL implementation could be around 20 times faster)
 ### Theory
