@@ -38,3 +38,10 @@ Here is the tentative schedule:
 - Create powerfull algorithms by pushing your hardware to its fundamental limits
 - Take a look back at all you have learnt so far and use it to gain incredible speedups in fundamental problems
 - Get started by following the instructions in the `README.md` file in the `Week3` folder
+## Week4 : Numpy in CPP
+- The first of our pure application based weeks
+- In this week you will be building the foundations of `Machine Learning`
+- You will be implementing the `numpy` library in C++
+- Apply all that you have learned so far to get huge performance gains over the naive implementations
+- Get started by following the instructions in the `README.md` file in the `Week4` folder
+
