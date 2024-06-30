@@ -44,4 +44,9 @@ Here is the tentative schedule:
 - You will be implementing the `numpy` library in C++
 - Apply all that you have learned so far to get huge performance gains over the naive implementations
 - Get started by following the instructions in the `README.md` file in the `Week4` folder
-
+## Week5 : Machine Learning
+- One of the biggest buzzwords in the world of Computer Science right now
+- Everyone and their grandmother is obsessed with machine learning
+- However, traditional machine learning is done almost entirely in `python`, due to the language's powerfull abstractions
+- Last week, we shattered the wall between the `numpy` library and this week will expose the power of `low level code` to this coveted field
+- Put your matrices to work performing `linear` and `logistic regression`, the fundamental cornerstones of any good ML library 
