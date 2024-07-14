@@ -57,3 +57,10 @@ Here is the tentative schedule:
 - Unlike matrices, we cannot just throw `multithreading` at this problem and hope to solve it
 - We have to be a lot more `clever` about optimising this
 - Get started by following the instructions in the `README.md` file in the `Week6` folder
+## Week7 : SAT Solver
+- Make the CNF Solver of Week 6 actually usable via API calls
+- Add compatibility of any `arbitary formula` rather than restricting yourself to CNFs
+- Use this SAT Solver to solve `NP-Complete` problems
+- You will have to use your brain to think about how you can `reduce` the problems to SAT
+- No forced optimizations this week, although tseitin can be highly optimized
+- Get started by following the instructions in the `README.md` file in the `Week7` folder
